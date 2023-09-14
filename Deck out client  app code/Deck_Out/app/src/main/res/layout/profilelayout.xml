@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/colorPrimaryDark"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/profilebackgroundimageviewlayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/profilebackgroundimageviewlayout"
+        android:layout_marginTop="-100dp"
+        android:layout_height="200dp"
+        android:background="@drawable/ic_profileblock"
+      />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/background"
+        android:layout_marginTop="-200dp">
+
+
+        <FrameLayout
+            android:id="@+id/profilepiclayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/profilepiclayout">
+
+            <TextView
+                android:id="@+id/profileuser_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/semibold"
+                android:textColor="@android:color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/profileemailid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profileuser_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-light"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="-80dp"
+            android:layout_below="@+id/background"
+            >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:id="@+id/datainputlayout"
+        android:background="@drawable/profileboxbg"
+        android:layout_below="@+id/background"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADDRESS :"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:id="@+id/proaddrtxt"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/proaddrtxt"
+            android:id="@+id/profileaddresslist"
+            />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/boxwithcorner"
+                android:padding="10dp"
+                android:id="@+id/profileaddnewaddresslayout"
+                android:layout_below="@+id/profileaddresslist"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/whitneymedium"
+                    android:layout_toLeftOf="@+id/backbtnicon"
+                    android:text="Add New Address"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/backbtnicon"
+                    android:contentDescription="TODO" android:src="@drawable/ic_blackrightarrow"
+                    android:layout_alignParentRight="true"
+
+                    />
+
+            </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHONE NUMBER :"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/profilephnotxt"
+            android:layout_below="@+id/profileaddnewaddresslayout"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/box"
+            android:id="@+id/profilephnoinput"
+            android:layout_below="@+id/profilephnotxt"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:padding="10dp"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mycartitemremovebuttonbackground"
+            android:textColor="#ffffff"
+            android:id="@+id/edit_btn"
+            android:text="EDIT"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+
+        </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginTop="15dp"
+        android:background="@color/transparent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/profileeditbtn"
+        android:contentDescription="TODO" android:src="@drawable/ic_lock"
+        android:id="@+id/changepassbtn"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:id="@+id/profileeditbtn"
+        android:contentDescription="TODO" android:src="@drawable/ic_editwhite"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>
+
+</ScrollView>

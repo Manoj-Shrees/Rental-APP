@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:id="@+id/mycartitemlayout"
+    android:background="@color/transparent"
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        >
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mycartitemcheck"
+            android:clickable="false"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="17dp"
+            android:id="@+id/mycartproductname"
+            android:layout_toRightOf="@+id/mycartitemcheck"
+            android:layout_toLeftOf="@+id/setdurationandtag"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_calender"
+            android:id="@+id/setdurationandtag"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#8c000000"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/mycartitemcheck"
+            android:id="@+id/mycartproducttype"
+            android:layout_toLeftOf="@+id/setdurationandtag"
+            android:layout_below="@+id/mycartproductname"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="TODO" android:scaleType="fitXY"
+            android:id="@+id/mycartproductimg"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/mycartproductimg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:id="@+id/mycartpricetxt"
+                android:text="Price : "
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textSize="12dp"
+                android:textColor="#c0000000"
+                android:id="@+id/mycartprice"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:id="@+id/mycartquantitytxt"
+                android:layout_below="@+id/mycartpricetxt"
+                android:text="Quantity : "
+                />
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight=".28"
+                android:layout_below="@+id/mycartpricetxt"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/spinnerbackground"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/mycartquantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:enabled="false"
+                    android:spinnerMode="dropdown" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="TODO" android:src="@drawable/ic_spinnerdropdown"
+                    android:layout_alignParentRight="true"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/mycarttotalpricetxt"
+                android:layout_below="@+id/mycartquantitytxt"
+                android:text="Total Price : "
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mycarttotalprice"
+                android:layout_below="@+id/mycartquantitytxt"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:textColor="#c0000000"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#4721e1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:id="@+id/mycartduration"
+                android:layout_below="@+id/mycarttotalpricetxt"
+                />
+
+
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/myorderOrderno"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@color/transparent"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#000000"
+            android:text="Details"
+            android:fontFamily="@font/whitneymedium"
+            android:layout_alignParentLeft="true"
+            android:drawablePadding="-10dp"
+            android:id="@+id/mycartdetails"
+            />
+
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_ruler"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            android:padding="5dp"
+            android:id="@+id/mycartsizebutton"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@color/transparent"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:textColor="#000000"
+            android:text="Remove"
+            android:fontFamily="@font/whitneymedium"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="-5dp"
+            android:id="@+id/mycartcancleorder"
+            />
+
+
+    </RelativeLayout>
+
+    </LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/boxwithcorner"
+    >
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/indianflag"
+        android:src="@drawable/ic_indian_flag"
+        android:layout_centerHorizontal="true"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:id="@+id/availsep"
+        android:layout_below="@+id/indianflag"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        android:fontFamily="@font/whitneymedium"
+        android:gravity="center"
+        android:id="@+id/availibiltymsg"
+        android:layout_below="@+id/availsep"
+        android:text="* Sorry for Inconvenience *\nThis app only Available in India for now  ."
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boxwithcorner"
+        android:text="close this App"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/avialcloseappbtn"
+        android:layout_below="@+id/availibiltymsg"
+        />
+
+</RelativeLayout>

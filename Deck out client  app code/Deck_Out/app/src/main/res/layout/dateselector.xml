@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+    >
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:id="@+id/dateselectorroot"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productnametxt"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/sizelayout"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/productnametxt"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/whitneymedium"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/selectedsize"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/xsbtn"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateselectorsizetxt"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:fontFamily="@font/whitneymedium"
+        android:layout_below="@+id/sizelayout"
+        />
+
+   <com.trendsetter.deck_out.Calender.customviews.DateRangeCalendarView
+    android:id="@+id/productcalendar"
+    android:layout_below="@+id/dateselectorsizetxt"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top|center_horizontal"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    custom:header_bg="@drawable/calendarheader"
+    android:background="@drawable/calenderbackground"
+    custom:range_color="@color/White"
+    custom:disable_date_color="@color/grey"
+    custom:layout_collapseMode="parallax"
+    custom:default_date_color="@color/White"
+    custom:range_date_color="#000000"
+    custom:selected_date_color="#000000"
+    custom:selected_date_circle_color="#00fff2"
+    custom:title_color="#ffffff"
+  />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/rentaltxt"
+    android:layout_below="@+id/productcalendar"
+    android:text="Rental Price"
+    android:textColor="#ffffff"
+    android:textSize="15dp"
+    android:layout_centerHorizontal="true"
+    android:textAllCaps="true"
+    />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ce3939"
+        android:textStyle="bold"
+        android:id="@+id/dresspricetxt"
+        android:layout_below="@+id/rentaltxt"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/securitytxt"
+        android:layout_below="@+id/dresspricetxt"
+        android:text="Security Deposit"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹ 2,000"
+        android:textColor="#ce3939"
+        android:textStyle="bold"
+        android:id="@+id/securitypricetxt"
+        android:layout_below="@+id/securitytxt"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dress Tag name"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:background="#ffffff"
+        android:layout_margin="20dp"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:padding="10dp"
+        android:id="@+id/dresstagname"
+        android:layout_below="@+id/securitypricetxt"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/holoboxwhite"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/proceedtopaymentbtn"
+        android:layout_below="@+id/dresstagname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="15dp"
+        android:text=" ADD TO CART "
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/holoboxwhite"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:id="@+id/tocancelbtn"
+        android:layout_below="@+id/proceedtopaymentbtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="15dp"
+        android:text="Cancel"
+        />
+
+</RelativeLayout>
+
+</ScrollView>

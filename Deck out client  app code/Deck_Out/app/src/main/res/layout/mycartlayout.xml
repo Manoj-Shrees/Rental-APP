@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#e8e8e8"
+    android:layout_height="match_parent"
+    android:id="@+id/mycartrootlayout"
+    >
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/mycartdatalist"
+       android:layout_below="@+id/mycarttoolbar"
+       android:layout_above="@+id/mycartbottom_layout"
+       android:paddingBottom="5dp"
+       android:visibility="gone"
+       >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mycard_product_detail"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price Details "
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000"
+        android:id="@+id/mycartpricedetailheadtxt"
+        android:textAllCaps="true"
+        android:layout_below="@+id/mycard_product_detail"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:id="@+id/Pricepannel"
+        android:layout_below="@+id/mycartpricedetailheadtxt"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/boxwithcorner"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected items"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:id="@+id/mycartpricedetailsnoofitemstxt"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:layout_marginRight="10dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:id="@+id/mycartpricedetailsnoofitems"
+            android:layout_alignParentRight="true"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/mycartpricedetailsnoofitemstxt"
+            android:id="@+id/mycartpricedetaildeliverytypetxt"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FREE"
+            android:textSize="15dp"
+            android:textColor="#05c014"
+            android:layout_marginTop="10dp"
+            android:id="@+id/mycartpricedetailsdeliverytype"
+            android:layout_below="@+id/mycartpricedetailsnoofitemstxt"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/mycartpricedetailsdeliverytype"
+            android:id="@+id/mycartpricedetailpricetxt"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="#15e3ce"
+            android:layout_marginTop="10dp"
+            android:id="@+id/mycartpricedetailprice"
+            android:layout_below="@+id/mycartpricedetailsdeliverytype"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Security"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_below="@+id/mycartpricedetailpricetxt"
+            android:id="@+id/mycartpricedetailsecuritypricetxt"
+            android:layout_alignParentLeft="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ ₹ 2000"
+            android:textSize="15dp"
+            android:textColor="#2a05c0"
+            android:layout_marginTop="10dp"
+            android:id="@+id/mycartpricedetailsecurityprice"
+            android:layout_below="@+id/mycartpricedetailpricetxt"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount Payable"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/mycartpricedetailsecuritypricetxt"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:textColor="#d60e15"
+            android:layout_alignParentRight="true"
+            android:id="@+id/mycartgrandtotalprice"
+            android:layout_below="@+id/mycartpricedetailsecuritypricetxt"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+   </ScrollView>
+
+
+    <RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/mycartbottom_layout"
+android:layout_alignParentBottom="true"
+android:padding="15dp"
+android:background="#ffffff"
+android:visibility="gone"
+    >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:textSize="15dp"
+    android:textColor="#db0105"
+    android:id="@+id/mycartpayableamounthighlight"
+    />
+
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:text="pay now"
+    android:id="@+id/paybtn"
+    android:layout_centerVertical="true"
+    android:layout_alignParentRight="true"
+    android:textColor="#ffffff"
+    android:background="#3782f2"
+    />
+
+</RelativeLayout>
+
+
+    <include layout="@layout/noitemfoundlayout"
+        android:layout_below="@+id/mycarttoolbar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/mycartnoitemfound"
+        android:visibility="gone"
+        />
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mycarttoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#303F9F"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+</RelativeLayout>

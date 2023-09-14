@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/paymenttoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#303F9F"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+    <com.shuhart.stepview.StepView
+        android:id="@+id/paymentstep_view"
+        android:layout_below="@+id/paymenttoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#303F9F"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        app:sv_selectedCircleColor="@color/Blue"
+        app:sv_selectedTextColor="@color/Blue"
+        app:sv_stepLineWidth="1dp"
+        app:sv_stepPadding="4dp"
+        app:sv_nextTextColor="@color/Black"
+        app:sv_nextStepLineColor="@color/blackT100"
+        app:sv_doneCircleColor="@color/White"
+        app:sv_doneStepLineColor="@color/White"
+        app:sv_doneCircleRadius="12dp"
+        app:sv_selectedCircleRadius="12dp"
+        app:sv_selectedStepNumberColor="@color/White"
+        app:sv_doneTextColor="@color/White"
+        app:sv_stepViewStyle="@style/StepView"
+        app:sv_doneStepMarkColor="@color/Black"
+        app:sv_stepNumberTextSize="12sp"
+        app:sv_animationType="Line"
+       />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/paymentfragcontainer"
+        android:layout_above="@+id/paymentbtn"
+        android:layout_below="@+id/paymentstep_view"
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymentbtn"
+        android:background="@color/Black"
+        android:text="Confirm"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>

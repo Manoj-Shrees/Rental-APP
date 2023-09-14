@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3b444b"
+    >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_centerInParent="true"
+    >
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/loadinggear"
+        android:id="@+id/applogo"
+        />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:text="Gettting Things ready\n\nPlease Wait . . . ."
+            android:layout_marginTop="40dp"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/sneakout"
+            />
+
+</LinearLayout>
+
+
+
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/reviewprogressbar"
+        android:layout_centerHorizontal="true"
+       android:layout_above="@+id/datacollectormessage"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/mainscreenprogressstyle"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Connecting to server"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/whitneymedium"
+        android:id="@+id/datacollectormessage"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

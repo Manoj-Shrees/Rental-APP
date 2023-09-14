@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_feedback"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_feedbacksized"
+        app:showAsAction="always"
+        android:title="Feedback" />
+    <item
+        android:id="@+id/action_tasklist"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_tasklistsized"
+        app:showAsAction="always"
+        android:title="Task List" />
+    <item
+        android:id="@+id/action_user"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_usersized"
+        app:showAsAction="always"
+        android:title="User" />
+    <item
+        android:id="@+id/action_changepass"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_changepass"
+        app:showAsAction="always"
+        android:title="User" />
+    <item
+        android:id="@+id/action_sendnotific"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_sendnotificwhite"
+        app:showAsAction="always"
+        android:title="User" />
+
+
+</menu>

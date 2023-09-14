@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="20dp"
+    android:layout_margin="10dp"
+    android:id="@+id/myorderscard"
+    app:cardBackgroundColor="#FFFFFF">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/myorderdetaillayout"
+    android:padding="10dp"
+    >
+
+  <ImageView
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:contentDescription="TODO"
+      android:scaleType="fitXY"
+      android:src="@drawable/ic_bulkorder"
+      android:layout_centerVertical="true"
+      android:id="@+id/myorderimage"
+      />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="10dp"
+      android:id="@+id/ordername"
+      android:layout_toRightOf="@+id/myorderimage"
+      android:textStyle="bold"
+      android:textSize="15dp"
+      android:textColor="#000000"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="10dp"
+      android:id="@+id/ordertype"
+      android:layout_below="@+id/ordername"
+      android:layout_toRightOf="@+id/myorderimage"
+      android:textSize="12dp"
+      android:textColor="#000000"
+      />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="10dp"
+      android:id="@+id/orderprice"
+      android:layout_below="@+id/ordername"
+      android:layout_alignParentRight="true"
+      android:textSize="12dp"
+      android:textColor="#000000"
+      />
+
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="10dp"
+      android:id="@+id/orderquantntype"
+      android:gravity="center"
+      android:layout_below="@+id/ordertype"
+      android:layout_toRightOf="@+id/myorderimage"
+      android:textSize="12dp"
+      android:textColor="#000000"
+      />
+
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginTop="10dp"
+      android:id="@+id/orderstatus"
+      android:layout_below="@+id/orderquantntype"
+      android:layout_toRightOf="@+id/myorderimage"
+      android:textSize="13dp"
+      android:textColor="#1542e6"
+      />
+
+
+</RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/orderOrderno"
+        android:layout_below="@+id/myorderdetaillayout"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:padding="5dp"
+        android:background="@drawable/box"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/trackandcancedlayout"
+        android:layout_below="@+id/orderOrderno"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:gravity="center"
+          android:paddingTop="3dp"
+          android:paddingBottom="3dp"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:id="@+id/trackorderbtn"
+          android:layout_alignRight="@+id/orderselectorsep"
+          >
+
+      <ImageView
+          android:layout_width="50dp"
+          android:layout_height="30dp"
+          android:background="@drawable/ic_trackorder"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="10dp"
+          android:textColor="#ffffff"
+          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Order"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/whitneymedium"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            />
+
+      </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#000000"
+            android:textSize="15dp"
+            android:id="@+id/orderselectorsep"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:paddingTop="5dp"
+          android:paddingBottom="2dp"
+          android:gravity="center"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:id="@+id/cancelorderbtn"
+          android:layout_alignLeft="@+id/orderselectorsep"
+          >
+
+      <ImageView
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:background="@drawable/ic_delete"
+          android:textStyle="bold"
+          android:textColor="#ffffff"
+          android:textSize="10dp"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="10dp"
+          />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel Order"
+            android:id="@+id/myorderdeletebtntxt"
+            android:fontFamily="@font/whitneymedium"
+            android:textColor="#000000"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            />
+
+      </LinearLayout>
+
+    </RelativeLayout>
+
+
+  </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

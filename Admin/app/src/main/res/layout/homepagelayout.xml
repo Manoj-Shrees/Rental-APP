@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/homepagetoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#303F9F"
+        android:gravity="top"
+        android:padding="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/homepagetoolbar"
+            android:layout_above="@+id/verstiondetailstxt"
+            android:id="@+id/homepagerecylerview"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:background="#CE3B444B"
+        android:fontFamily="@font/whitneymedium"
+        android:id="@+id/verstiondetailstxt"
+        android:text=" Deck Out Admin -  2  .  0"
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        />
+
+</RelativeLayout>

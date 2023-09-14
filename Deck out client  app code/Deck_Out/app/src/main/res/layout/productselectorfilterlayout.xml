@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter By"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:fontFamily="@font/whitneymedium"
+        android:id="@+id/sortbytopic"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_marginTop="20dp"
+        android:id="@+id/sortbyseprator"
+        android:layout_below="@+id/sortbytopic"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kids"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:fontFamily="@font/whitneymedium"
+        android:id="@+id/filterbykids"
+        android:layout_below="@+id/sortbyseprator"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/selectkids"
+        android:buttonTint="#000000"
+        android:contentDescription="TODO" android:src="@drawable/ic_blacktick"
+        android:layout_below="@+id/sortbyseprator"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mens"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/whitneymedium"
+        android:id="@+id/filterbymens"
+        android:layout_below="@+id/filterbykids"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:buttonTint="#000000"
+        android:id="@+id/selectmens"
+        android:contentDescription="TODO" android:src="@drawable/ic_blacktick"
+        android:layout_below="@+id/filterbykids"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Womens"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/whitneymedium"
+        android:id="@+id/filterbywomens"
+        android:layout_below="@+id/filterbymens"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:buttonTint="#000000"
+        android:id="@+id/selectwomens"
+        android:contentDescription="TODO" android:src="@drawable/ic_blacktick"
+        android:layout_below="@+id/filterbymens"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Classic"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/whitneymedium"
+        android:id="@+id/filterbyclassic"
+        android:layout_below="@+id/filterbywomens"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:buttonTint="#000000"
+        android:id="@+id/selectclassic"
+        android:contentDescription="TODO" android:src="@drawable/ic_blacktick"
+        android:layout_below="@+id/filterbywomens"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fancy"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/whitneymedium"
+        android:id="@+id/filterbyfancy"
+        android:layout_below="@+id/filterbyclassic"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:buttonTint="#000000"
+        android:contentDescription="TODO" android:src="@drawable/ic_blacktick"
+        android:id="@+id/selectfancy"
+        android:layout_below="@+id/filterbyclassic"
+        android:visibility="gone"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="State"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/whitneymedium"
+        android:id="@+id/filterbystate"
+        android:layout_below="@+id/filterbyfancy"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:buttonTint="#000000"
+        android:id="@+id/selectstate"
+        android:contentDescription="TODO" android:src="@drawable/ic_blacktick"
+        android:layout_below="@+id/filterbyfancy"
+        android:visibility="gone"
+        />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Western"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/whitneymedium"
+        android:id="@+id/filterbywestern"
+        android:layout_below="@+id/filterbystate"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:buttonTint="#000000"
+        android:id="@+id/selectwestern"
+        android:contentDescription="TODO" android:src="@drawable/ic_blacktick"
+        android:layout_below="@+id/filterbystate"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>

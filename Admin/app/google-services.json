@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "792473902163",
+    "firebase_url": "https://deck-out.firebaseio.com",
+    "project_id": "deck-out",
+    "storage_bucket": "deck-out.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792473902163:android:92a2ceaba44ca726",
+        "android_client_info": {
+          "package_name": "com.trendsetter.deck_out"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792473902163-6br6v6hn8kfukv1h82tlllh25297ajdh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trendsetter.deck_out",
+            "certificate_hash": "b06ae7e6a7d4958b305a2407d8d3dc684a078b8c"
+          }
+        },
+        {
+          "client_id": "792473902163-editmh6ddkbaeko7jqrb4msbhv7qbtqu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trendsetter.deck_out",
+            "certificate_hash": "f68d3dbfafa9e2c163db70520e51d4c68add8ab1"
+          }
+        },
+        {
+          "client_id": "792473902163-7joo003dsrooinkvrtnlsi7cn1m991ie.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trendsetter.deck_out",
+            "certificate_hash": "bcd2a273686db692569c86c8304fe4dc0418cf29"
+          }
+        },
+        {
+          "client_id": "792473902163-gh6j1uej2gmbih2kcior2sj6fbocevvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6AnQmmtqPCLCSn7E8CmvW_HY2vNOjnRU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792473902163-gh6j1uej2gmbih2kcior2sj6fbocevvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792473902163:android:bd0db883aa7e4799",
+        "android_client_info": {
+          "package_name": "com.trendsetter.deckout_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792473902163-jnc97scq6t4igo0op2v5300q9rgu6uo7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trendsetter.deckout_admin",
+            "certificate_hash": "f68d3dbfafa9e2c163db70520e51d4c68add8ab1"
+          }
+        },
+        {
+          "client_id": "792473902163-gh6j1uej2gmbih2kcior2sj6fbocevvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6AnQmmtqPCLCSn7E8CmvW_HY2vNOjnRU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792473902163-gh6j1uej2gmbih2kcior2sj6fbocevvl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

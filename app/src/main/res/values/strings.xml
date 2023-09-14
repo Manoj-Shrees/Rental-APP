@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Deck Out Delivery</string>
+
+    <string name="smsserverapikey">3BLxQgjNU6M-ueBiB2j7j6KcxKUuuWKivULbkfNu9D</string>
+    <string name="senderid">DOUMSG</string>
+</resources>

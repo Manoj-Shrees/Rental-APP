@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">Deckout Admin</string>
+
+    <string name="smsserverapikey">3BLxQgjNU6M-ueBiB2j7j6KcxKUuuWKivULbkfNu9D</string>
+    <string name="senderid">DOUMSG</string>
+
+    <string-array name="dresscode">
+
+        <item>KPant</item>
+        <item>KFrock</item>
+        <item>KTshirt</item>
+        <item>KShirt</item>
+        <item>KJump Suit</item>
+        <item>MPant</item>
+        <item>MShirt</item>
+        <item>MTshirt</item>
+        <item>WPant</item>
+        <item>WFrock</item>
+        <item>WTshirt</item>
+        <item>WShirt</item>
+        <item>WJump Suit</item>
+
+    </string-array>
+
+    <string-array name="dresstype">
+
+        <item>Topwear</item>
+        <item>Bottomwear</item>
+        <item>Headwear</item>
+        <item>Footwear</item>
+        <item>Bellywear</item>
+        <item>Others</item>
+
+    </string-array>
+
+    <string-array name="dressparenttype">
+
+        <item>Classic</item>
+        <item>Fancy</item>
+        <item>State</item>
+        <item>Western</item>
+
+    </string-array>
+
+    <string-array name="dresscattype">
+        <item>Clothing</item>
+        <item>Accessories</item>
+    </string-array>
+
+    <string-array name="dresspairquant">
+        <item>Dress pair 1</item>
+        <item>Dress pair 2</item>
+        <item>Dress pair 3</item>
+    </string-array>
+
+    <string-array name="dressmanagetypelist">
+        <item>Homepage Top Ads</item>
+        <item>Homepage Top Shortcuts</item>
+        <item>Homepage Ads Banners</item>
+        <item>Homepage Dress Gallery</item>
+        <item>Manage Homepage Dress Gallery</item>
+        <item>Explore option Ads Banner</item>
+        <item>Dress Details list</item>
+    </string-array>
+
+
+    <string-array name="createusertype">
+        <item>Delivery boy</item>
+        <item>Retailer</item>
+    </string-array>
+
+    <string-array name="hflcztype">
+        <item>Help</item>
+        <item>FAQ</item>
+        <item>Legal</item>
+        <item>Contact</item>
+        <item>Zip code</item>
+        <item>Manage Help , FAQ , Legal</item>
+        <item>Manage Zip code</item>
+    </string-array>
+
+    <string-array name="hflqnatype">
+    <item>Help</item>
+    <item>FAQ</item>
+    <item>Legal</item>
+    </string-array>
+
+    <string-array name="exploreadsbanner">
+        <item>CLASSIC</item>
+        <item>FANCY</item>
+        <item>KIDS</item>
+        <item>MENS</item>
+        <item>STATE</item>
+        <item>WESTERN</item>
+        <item>WOMENS</item>
+    </string-array>
+
+
+    <string-array name="homepageadsbanner">
+        <item>Classic</item>
+        <item>Fancy</item>
+        <item>State</item>
+        <item>Western</item>
+        <item>Bottom</item>
+    </string-array>
+
+
+    <string-array name="homepagedresstype">
+        <item>Classic</item>
+        <item>Fancy</item>
+        <item>State</item>
+        <item>Western</item>
+    </string-array>
+
+    <string-array name="homepagedresssubtype">
+        <item>Kids</item>
+        <item>Mens</item>
+        <item>Womens</item>
+    </string-array>
+
+    <string-array name="dressnewtype">
+        <item>New</item>
+        <item>Old</item>
+    </string-array>
+
+    <string-array name="feedbackcat">
+        <item>Report an Error</item>
+        <item>Suggestion / Advice</item>
+        <item>Anything else</item>
+    </string-array>
+
+    <string-array name="orderstatslist">
+        <item>Confirm Order</item>
+        <item>Shipped Order</item>
+        <item>Out of Delivery</item>
+        <item>Cancel Order</item>
+    </string-array>
+
+
+</resources>

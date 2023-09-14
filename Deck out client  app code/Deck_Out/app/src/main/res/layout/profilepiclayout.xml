@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    >
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/profile_progressbar"
+        app:cpb_background_progressbar_color="#f2f1f1"
+        app:cpb_background_progressbar_width="5dp"
+        app:cpb_progressbar_color="#000000"
+        app:cpb_progressbar_width="2dp"
+        app:cpb_indeterminate_mode="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/profileimageview"
+        android:src="@drawable/ic_avatar"
+        android:layout_marginLeft="20dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

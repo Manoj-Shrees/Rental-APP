@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                android:text="Net Payable Amount"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/whitneymedium"
+                android:layout_toRightOf="@+id/selectaddress"
+                android:layout_toLeftOf="@+id/addresseditbtn"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:id="@+id/netpayableamount"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="#2a1ada"
+                />
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="2dp"
+            android:padding="5dp"
+            android:text="Shipping Address"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="@font/whitneymedium"
+            android:layout_toRightOf="@+id/selectaddress"
+            android:layout_toLeftOf="@+id/addresseditbtn"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:id="@+id/proceedaddresstxt"
+            android:textSize="15dp"
+            android:textColor="#aa000000"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Payment Options"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:layout_marginLeft="4dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/boxwithcorner"
+                android:padding="10dp"
+                android:id="@+id/paymentproceedonlinepayment"
+                android:layout_below="@+id/paymentaddresslist"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/whitneymedium"
+                    android:layout_toLeftOf="@+id/backbtnicon1"
+                    android:text="Online Payment"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/backbtnicon1"
+                    android:contentDescription="TODO" android:src="@drawable/ic_blackrightarrow"
+                    android:layout_alignParentRight="true"
+
+                    />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/boxwithcorner"
+                android:padding="10dp"
+                android:id="@+id/paymentproceedcodbtn"
+                android:layout_below="@+id/paymentaddresslist"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/whitneymedium"
+                    android:layout_toLeftOf="@+id/backbtnicon2"
+                    android:text="Cash on Delivery"
+                    />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/backbtnicon2"
+                    android:contentDescription="TODO" android:src="@drawable/ic_blackrightarrow"
+                    android:layout_alignParentRight="true"
+
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</ScrollView>

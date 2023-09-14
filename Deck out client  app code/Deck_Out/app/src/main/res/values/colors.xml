@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#40a0ff</color>
+    <color name="White">#ffffff</color>
+    <color name="Black">#000000</color>
+    <color name="grey">#767676</color>
+    <color name="blackT30">#64000000</color>
+    <color name="blackT100">#64000000</color>
+    <color name="Blue">#00b7ff</color>
+    <color name="Yellow">#f4e801</color>
+
+
+    <color name="persian_green_primary">#0DAC8F</color>
+    <color name="persian_green_dark">#0A927A</color>
+    <color name="persian_green_accent">#0A927A</color>
+
+
+    <!-- Calender colors set -->
+    <color name="selected_date_circle_color">#54B948</color>
+
+    <!-- Fonts -->
+    <color name="title_color">#000</color>
+    <color name="date_color">#000</color>
+    <color name="week_color">#000</color>
+
+    <!-- Calendar Date -->
+    <color name="default_date_color">#3b4144</color>
+    <color name="disable_date_color">#BDBDBD</color>
+    <color name="range_date_color">@color/default_date_color</color>
+    <color name="selected_date_color">#FFF</color>
+    <color name="range_bg_color">#B7C99D</color>
+    <color name="calendar_text">#474747</color>
+</resources>

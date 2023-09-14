@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/exploreproducttoolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="#303F9F"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/expoptionheadtxt"
+                android:layout_marginTop="7dp"
+                android:fontFamily="@font/semibold"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/exploremenu_cart"
+                android:contentDescription="TODO" android:src="@drawable/ic_carthollow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                />
+
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/exoplorecartbadge"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_badge"
+                android:textColor="#ffffff"
+                android:textSize="7dp"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/exploremenu_wishlist"
+                android:layout_toLeftOf="@+id/exoplorewishlistbadge"
+                android:contentDescription="TODO" android:src="@drawable/ic_wishlisthollow"
+                android:layout_centerVertical="true"
+                />
+
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentTop="true"
+                android:id="@+id/exoplorewishlistbadge"
+                android:layout_toLeftOf="@+id/exploremenu_cart"
+                android:background="@drawable/ic_badge"
+                android:textColor="#ffffff"
+                android:textSize="7dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/exploresearchbtn"
+                android:layout_toLeftOf="@+id/exploremenu_wishlist"
+                android:background="@drawable/ic_search"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                />
+
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/explorescrollview"
+    android:fillViewport="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="TODO" android:scaleType="fitCenter"
+            android:background="#ffffff"
+            android:layout_margin="10dp"
+            android:id="@+id/exploretopimg"
+            />
+
+
+        <com.trendsetter.deck_out.Extra.NonScrollExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:transcriptMode="alwaysScroll"
+        android:groupIndicator="@null"
+        android:id="@+id/optionselectorlist"
+        android:padding="10dp"
+        android:background="#ffffff"
+            />
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="TODO" android:scaleType="fitCenter"
+            android:background="#ffffff"
+            android:id="@+id/explorebanner1"
+            />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="TODO" android:scaleType="fitCenter"
+            android:background="#ffffff"
+            android:id="@+id/explorebanner2"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:contentDescription="TODO" android:scaleType="fitCenter"
+            android:background="#ffffff"
+            android:id="@+id/explorebanner3"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/whitneymedium"
+            android:layout_marginTop="10dp"
+            android:text="Top Dress"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semibold"
+            android:layout_marginTop="3dp"
+            android:text=" Most in Demand "
+            android:textColor="#838383"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/suggestselectorlist"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            android:contentDescription="TODO" android:scaleType="fitCenter"
+            android:background="#ffffff"
+            android:id="@+id/explorebanner4"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="TODO" android:scaleType="fitCenter"
+            android:background="#ffffff"
+            android:id="@+id/explorebanner5"
+            />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:contentDescription="TODO" android:scaleType="fitCenter"
+            android:background="#ffffff"
+            android:id="@+id/explorebanner6"
+            />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+</LinearLayout>

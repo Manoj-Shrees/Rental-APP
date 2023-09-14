@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/transparent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/boxwithcorner"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Size Charts"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:id="@+id/itemtxt"
+        android:textColor="#5d72eb"
+        android:textStyle="bold"
+        />
+
+    <View
+        android:id="@+id/SplitLine_hor"
+        android:layout_width="match_parent"
+        android:layout_height= "1dp"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/itemtxt"
+        android:background="#000000" />
+
+
+
+    <segmented_control.widget.custom.android.com.segmentedcontrol.SegmentedControl
+        android:id="@+id/segmented_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:columnCount="3"
+        app:distributeEvenly="true"
+        app:textVerticalPadding="6dp"
+        app:strokeWidth="1dp"
+        app:unSelectedStrokeColor="#000000"
+        app:segmentHorizontalMargin="5dp"
+        app:segmentVerticalMargin="5dp"
+        android:layout_below="@+id/SplitLine_hor"
+        />
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/sizechartitemimg"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/segmented_control"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+
+
+
+</RelativeLayout>
+
+<ImageView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/ic_close"
+android:id="@+id/sizechartpdialogclose"
+android:layout_alignParentTop="true"
+android:layout_alignParentRight="true"
+    />
+
+    </RelativeLayout>

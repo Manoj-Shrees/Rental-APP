@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/orderdetailstoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#303F9F"
+        android:gravity="center"
+        android:padding="10dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/orderdetailsscrollview"
+        android:layout_above="@+id/deliveredbtn"
+        android:layout_below="@+id/orderdetailstoolbar"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:background="@drawable/buttonbg"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:id="@+id/ordername"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:background="@drawable/buttonbg"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:id="@+id/orderid"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:background="@drawable/buttonbg"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:id="@+id/ordercustname"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:background="@drawable/buttonbg"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:id="@+id/ordercustaddrs"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:background="@drawable/buttonbg"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:id="@+id/orderpaymentstatus"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:background="@drawable/buttonbg"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:id="@+id/orderduration"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:autoLink="phone"
+            android:id="@+id/custphno"
+            />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#46e1e1e1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/orderdetailsproductlist"
+            />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        android:id="@+id/deliveredbtn"
+        android:background="@drawable/buttonbg"
+        android:layout_alignParentBottom="true"
+        android:textColor="#ffffff"
+        android:text="Order Delivered"
+        />
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_map"
+        android:id="@+id/searchonmapbtn"
+        />
+
+
+</RelativeLayout>

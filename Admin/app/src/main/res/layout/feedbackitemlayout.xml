@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/boxwithcorner"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:padding="5dp"
+        android:background="#57000000"
+        android:id="@+id/feedbackuserid"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/userdetaillayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/feedbackuserimg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="TODO"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/feedbackuser_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/feedbackuserimg"
+            android:fontFamily="@font/whitneymedium"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/feedbacklistSplitLine"
+        android:layout_width="match_parent"
+        android:layout_height= "2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/userdetaillayout"
+        android:background="#aa000000" />
+
+
+    <com.ms.square.android.expandabletextview.ExpandableTextView
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/feedbacktxt"
+        android:layout_below="@+id/feedbacklistSplitLine"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#33ffffff"
+        expandableTextView:animDuration="200"
+        expandableTextView:maxCollapsedLines="2">
+
+        <TextView
+            android:id="@+id/expandable_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            />
+
+        <ImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:background="@android:color/transparent"
+            android:contentDescription="TODO" android:padding="16dp" />
+
+    </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+</RelativeLayout>

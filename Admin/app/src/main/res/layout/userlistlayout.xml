@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/userlisttop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#303F9F"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/userlistview"
+        android:layout_below="@+id/userlisttop"
+        />
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/userlistsearchbar"
+        android:layout_margin="10dp"
+        app:floatingSearch_viewTextColor="#000000"
+        app:floatingSearch_hintTextColor="#686868"
+        app:floatingSearch_dividerColor="#626262"
+        app:floatingSearch_viewSearchInputTextColor="#000000"
+        app:floatingSearch_suggestionRightIconColor="#000000"
+        app:floatingSearch_actionMenuOverflowColor="#000000"
+        app:floatingSearch_clearBtnColor="#000000"
+        app:floatingSearch_searchHint="Search User with phone No."
+        app:floatingSearch_searchSuggestionTextSize="15dp"
+        app:floatingSearch_leftActionColor="#000000"
+        app:floatingSearch_menuItemIconColor="#000000"
+        app:floatingSearch_viewSuggestionItemTextColor="#000000"
+        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_showVoiceInput="true"
+        app:floatingSearch_backgroundColor="#ffffff"
+        app:floatingSearch_showMoveSuggestionUp="true"
+        app:floatingSearch_dimBackground="true"
+        app:floatingSearch_dismissOnOutsideTouch="true"
+        app:floatingSearch_showOverFlowMenu="true"
+        app:floatingSearch_leftActionMode="showHome"
+        android:soundEffectsEnabled="true"
+        app:floatingSearch_showMenuAction="true"
+        app:floatingSearch_menu="@menu/userlistmenu"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+
+</RelativeLayout>

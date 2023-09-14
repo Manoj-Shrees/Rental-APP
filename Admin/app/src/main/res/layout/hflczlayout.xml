@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/hflcztoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#303F9F"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/hflcztoolbar"
+        android:id="@+id/hflczoptionlist"
+        android:background="@drawable/spinnerbackground">
+
+        <Spinner
+            android:id="@+id/dressmanagelistselector"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:spinnerMode="dropdown" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_spinnerdropdown"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:visibility="gone"
+        android:id="@+id/helpqueslayout"
+        android:layout_below="@+id/hflczoptionlist"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help Questionaries"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/whitneymedium"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="#000000"
+                android:layout_margin="20dp"
+                />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/helpques"
+                android:hint="Help Question"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/buttonbluefade"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textColorHint="#ffffff"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/whitneymedium"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/helpans"
+                android:hint="Help Answer"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@drawable/buttonbluefade"
+                android:textColor="#ffffff"
+                android:textSize="18dp"
+                android:textColorHint="#ffffff"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/whitneymedium"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Help Image"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:fontFamily="@font/whitneymedium"
+                />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_image_selector"
+                android:id="@+id/helpimg"
+                />
+
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbluefade"
+                android:id="@+id/helpsubmitbtn"
+                android:text="Submit"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/faqqueslayout"
+        android:layout_below="@+id/hflczoptionlist"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/whitneymedium"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="FAQ Questionaries"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_margin="20dp"
+                android:background="#000000" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/faqques"
+                android:background="@drawable/buttonbluefade"
+                android:fontFamily="@font/whitneymedium"
+                android:gravity="center"
+                android:hint="Faq Question"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="18dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/faqans"
+                android:background="@drawable/buttonbluefade"
+                android:fontFamily="@font/whitneymedium"
+                android:gravity="center"
+                android:hint="Faq Answer"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="18dp" />
+
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/faqbtn"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbluefade"
+                android:text="Submit"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/legalqueslayout"
+        android:layout_below="@+id/hflczoptionlist"
+        android:layout_marginTop="0dp"
+        android:visibility="gone"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/whitneymedium"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Legal Questionaries"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_margin="20dp"
+                android:background="#000000" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/legalques"
+                android:background="@drawable/buttonbluefade"
+                android:fontFamily="@font/whitneymedium"
+                android:gravity="center"
+                android:hint="Legal Question"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="18dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/legalans"
+                android:background="@drawable/buttonbluefade"
+                android:fontFamily="@font/whitneymedium"
+                android:gravity="center"
+                android:hint="Legal Answer"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="18dp" />
+
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/legalbtn"
+                android:background="@drawable/buttonbluefade"
+                android:text="Submit"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contactlayout"
+        android:layout_below="@+id/hflczoptionlist"
+        android:layout_marginTop="0dp"
+        android:visibility="gone"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/whitneymedium"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Contact Number"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_margin="20dp"
+                android:background="#000000" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/contactno"
+                android:background="@drawable/buttonbluefade"
+                android:fontFamily="@font/whitneymedium"
+                android:gravity="center"
+                android:hint="Contact Number"
+                android:maxLength="10"
+                android:inputType="number"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="18dp" />
+            />
+
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/cotactbtn"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbluefade"
+                android:text="Submit"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zipcodelayout"
+        android:layout_below="@+id/hflczoptionlist"
+        android:layout_marginTop="0dp"
+        android:visibility="gone"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/box"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/whitneymedium"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Zip Code"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_margin="20dp"
+                android:background="#000000" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/zipcode"
+                android:inputType="number"
+                android:background="@drawable/buttonbluefade"
+                android:fontFamily="@font/whitneymedium"
+                android:gravity="center"
+                android:hint="zip code"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="18dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/region"
+                android:inputType="text"
+                android:background="@drawable/buttonbluefade"
+                android:fontFamily="@font/whitneymedium"
+                android:gravity="center"
+                android:hint="Region"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="18dp" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/landmark"
+                android:background="@drawable/buttonbluefade"
+                android:fontFamily="@font/whitneymedium"
+                android:gravity="center"
+                android:hint="Landmark"
+                android:inputType="text"
+                android:imeOptions="actionDone"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff"
+                android:textSize="18dp" />
+
+
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/zipcodebtn"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/buttonbluefade"
+                android:text="Submit"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hflquesandanslistlayout"
+        android:layout_below="@+id/hflczoptionlist"
+        android:layout_marginTop="0dp"
+        android:padding="10dp"
+        android:visibility="gone"
+        android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/questypeselectorlayout"
+            android:background="@drawable/spinnerbackground">
+
+            <Spinner
+                android:id="@+id/queslistselector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:spinnerMode="dropdown" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_spinnerdropdown"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/quesandanslist"
+            android:layout_below="@+id/questypeselectorlayout"
+            />
+
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/zipcodelist"
+        android:visibility="gone"
+        android:layout_below="@+id/hflczoptionlist"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frgtmainlayout"
+    android:background="#ffffff"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/frgtpasstoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#303F9F"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@+id/frgtpasstoolbar"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/frgteid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Email ID Hint :"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/buttonroundcornerblue"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/frgteid"
+            android:id="@+id/frgtpasshintmail"
+            />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/buttonroundcornerblack"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:hint="example@domain.com"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#94b4b4b4"
+        android:textColor="#fff"
+        android:layout_below="@+id/frgtpasshintmail"
+        android:id="@+id/frgtpassemail"
+        />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Generate OTP  "
+            android:textStyle="bold"
+            android:layout_margin="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/frgtpassemail"
+            android:background="@drawable/buttonroundcornerblue"
+            android:textColor="#ffffff"
+            android:id="@+id/frgtpassgenotp"
+            />
+
+        <cn.iwgang.countdownview.CountdownView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            app:isShowDay="false"
+            app:isShowHour="false"
+            app:isShowMinute="false"
+            app:isHideTimeBackground="true"
+            app:isShowSecond="true"
+            app:timeTextColor="#000000"
+            app:timeTextSize="60dp"
+            app:isTimeTextBold="true"
+            app:suffixGravity="bottom"
+            app:suffixTextColor="#000000"
+            app:suffixTextSize="30dp"
+            app:suffixSecond="s"
+            app:suffixLRMargin="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/frgtseccounter"
+            android:layout_below="@id/frgtpassgenotp"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:text="Enter OTP from recieved Email"
+        android:layout_below="@+id/frgtseccounter"
+        android:id="@+id/pinviewheading"
+        />
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/frgtemailidpinview"
+        android:layout_below="@+id/pinviewheading"
+        app:pinBackground="@drawable/pinviewbg"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        app:pinWidth="40dp"
+        app:pinHeight="40dp"
+        app:pinLength="6"
+        app:cursorVisible="false"
+        app:forceKeyboard="false"
+        app:hint="0"
+        app:inputType="text"
+        app:password="false"
+        />
+
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/frgtpassprogressbar"
+            android:layout_below="@+id/frgtemailidpinview"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminate="true"
+            android:enabled="false"
+            android:visibility="gone"
+            android:indeterminateDrawable="@drawable/mainscreenprogressstyle"
+            />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Verify  "
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:layout_below="@+id/frgtpassprogressbar"
+        android:background="@drawable/buttonbluefade"
+        android:textColor="#ffffff"
+        android:id="@+id/frgtpassgenotpverify"
+        />
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

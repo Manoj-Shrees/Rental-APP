@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myordertoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#303F9F"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#46e1e1e1"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/myorder_product_detail"
+        android:layout_below="@+id/myordertoolbar"
+        />
+
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/orderlistSearchbar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:floatingSearch_viewTextColor="#000000"
+        app:floatingSearch_hintTextColor="#000000"
+        app:floatingSearch_suggestionRightIconColor="#000000"
+        app:floatingSearch_actionMenuOverflowColor="#000000"
+        app:floatingSearch_clearBtnColor="#000000"
+        app:floatingSearch_searchHint="Search Orders with orderid"
+        app:floatingSearch_searchSuggestionTextSize="15dp"
+        app:floatingSearch_leftActionColor="#000000"
+        app:floatingSearch_menuItemIconColor="#000000"
+        app:floatingSearch_viewSuggestionItemTextColor="#000000"
+        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_showVoiceInput="true"
+        app:floatingSearch_backgroundColor="#ffffff"
+        app:floatingSearch_showMoveSuggestionUp="true"
+        app:floatingSearch_dimBackground="true"
+        app:floatingSearch_dismissOnOutsideTouch="true"
+        app:floatingSearch_showOverFlowMenu="true"
+        app:floatingSearch_leftActionMode="showSearch"
+        android:soundEffectsEnabled="true"
+        android:layout_below="@+id/myordertoolbar"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"
+    />
+
+</RelativeLayout>

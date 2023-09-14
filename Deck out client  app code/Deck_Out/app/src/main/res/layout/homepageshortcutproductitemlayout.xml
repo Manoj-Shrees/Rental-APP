@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:contentDescription="TODO" android:scaleType="fitCenter"
+        android:background="#ffffff"
+        android:id="@+id/homepageshortcutbanner1"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:contentDescription="TODO" android:scaleType="fitCenter"
+        android:background="#ffffff"
+        android:layout_below="@+id/homepageshortcutbanner1"
+        android:id="@+id/homepageshortcutbanner2"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homepageshortcutbanner2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/homepageshortcutimgtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/sneakout"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/shortcutlay1"
+            android:layout_marginTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/homepageshortcutimgtxt"
+            >
+
+        <ImageView
+            android:id="@+id/shortcutimg1"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="2dp"
+            android:contentDescription="TODO" android:scaleType="fitXY"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/shortcutimg2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="2dp"
+            android:contentDescription="TODO" android:scaleType="fitXY"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/shortcutimg3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="2dp"
+            android:contentDescription="TODO" android:scaleType="fitXY"
+            android:layout_weight="1"
+            />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/shortcutlay2"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_below="@+id/shortcutlay1"
+            >
+
+        <ImageView
+            android:id="@+id/shortcutimg4"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="2dp"
+            android:contentDescription="TODO" android:scaleType="fitXY"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/shortcutimg5"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="2dp"
+            android:contentDescription="TODO" android:scaleType="fitXY"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/shortcutimg6"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="2dp"
+            android:contentDescription="TODO" android:scaleType="fitXY"
+            android:layout_weight="1"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/shortcutlay3"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/shortcutlay2"
+            >
+
+        <ImageView
+            android:id="@+id/shortcutimg7"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/shortcutlay2"
+            android:layout_margin="2dp"
+            android:contentDescription="TODO" android:scaleType="fitXY"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/shortcutimg8"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="2dp"
+            android:contentDescription="TODO" android:scaleType="fitXY"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:id="@+id/shortcutimg9"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="2dp"
+            android:contentDescription="TODO" android:scaleType="fitXY"
+            android:layout_weight="1"
+            />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

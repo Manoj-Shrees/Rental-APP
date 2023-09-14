@@ -1,0 +1,91 @@
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slidepager"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true" />
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/slideindicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/slidepager"
+        android:gravity="bottom"
+        android:padding="10dip"
+        app:centered="true"
+        app:fillColor="#000000"
+        app:pageColor="@color/transparent"
+        app:snap="true"
+        app:strokeColor="#000000"
+        app:strokeWidth="1dp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productshortcutlist"
+        android:layout_below="@+id/slidepager"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:id="@+id/shortcutimggallery"
+        android:background="#ffffff"
+        android:layout_below="@+id/productshortcutlist"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dress Gallery"
+            android:fontFamily="@font/sneakout"
+            android:id="@+id/productimgshortcuttitle"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/homepageimgshortcutlist"
+            android:layout_below="@+id/productimgshortcuttitle"
+            />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:contentDescription="TODO" android:scaleType="fitCenter"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:layout_below="@+id/shortcutimggallery"
+        android:id="@+id/homepageshortcutbanner1"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:contentDescription="TODO" android:scaleType="fitCenter"
+        android:background="#ffffff"
+        android:layout_below="@+id/homepageshortcutbanner1"
+        android:id="@+id/homepageshortcutbanner2"
+        />
+
+</RelativeLayout>

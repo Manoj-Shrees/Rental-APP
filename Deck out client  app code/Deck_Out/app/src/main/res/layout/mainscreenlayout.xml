@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainscreenbg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:id="@+id/deckoutlogolayout"
+        android:layout_marginTop="-40dp"
+        android:padding="10dp"
+        >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/deckoutlauncher"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:id="@+id/applogo"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Deck Out"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/sneakout"
+            />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:id="@+id/slippter"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="The Dress Rental App"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:fontFamily="@font/whitneymedium"
+            />
+
+    </LinearLayout>
+
+
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/reviewprogressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/mainscreenprogressstyle"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/signuppagelayout"
+    >
+    <androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="0dp"
+    android:id="@+id/detailscard"
+    app:cardBackgroundColor="#64000000"
+    android:layout_centerInParent="true"
+  >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/inputlayout"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="Existing user ?"
+            android:id="@+id/extistingidtxt"
+            />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:textSize="15dp"
+            android:background="@drawable/holoboxwhite"
+            android:textColor="#ffffff"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="lOGIN"
+            android:id="@+id/switchlogin"
+            />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome !"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/welcometxt"
+            android:layout_below="@+id/extistingidtxt"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Some Details are Required to sign up to our service."
+            android:textSize="12dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/messagetxt"
+            android:layout_below="@+id/welcometxt"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/holoboxwhite"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:imeOptions="actionNext"
+            android:inputType="textCapCharacters"
+            android:hint="Name"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textColorHint="#ffffff"
+            android:drawableLeft="@drawable/ic_user"
+            android:layout_below="@+id/messagetxt"
+            android:id="@+id/loginpagesignupuser_name"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/holoboxwhite"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:hint="Email ID"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textColorHint="#ffffff"
+            android:drawableLeft="@drawable/ic_email"
+            android:layout_below="@+id/loginpagesignupuser_name"
+            android:id="@+id/loginpagesignupemailid"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/holoboxwhite"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:hint="Mobile No."
+            android:maxLength="10"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textColorHint="#ffffff"
+            android:drawableLeft="@drawable/ic_phone_no"
+            android:layout_below="@+id/loginpagesignupemailid"
+            android:id="@+id/loginpagesignupmobno"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/holoboxwhite"
+            android:padding="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:hint="password"
+            android:maxLength="16"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textColorHint="#ffffff"
+            android:drawableLeft="@drawable/ic_passicon"
+            android:layout_below="@+id/loginpagesignupmobno"
+            android:id="@+id/loginpagesignuppass"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginpagesignuppass"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:buttonTint="#ffffff"
+            android:text="Show Password"
+            android:textColor="#ffffff"
+            android:id="@+id/loginpagesignupshowhidepass"
+            />
+
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+      android:layout_width="70dp"
+      android:layout_height="40dp"
+      android:background="@drawable/holoboxblack"
+      android:layout_marginLeft="40dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginBottom="30dp"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentRight="true"
+      android:text="Sign Up"
+      android:textColor="#000000"
+      android:id="@+id/loginpagesignupbtn"
+    />
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:id="@+id/signupprogressBar"
+        app:mlpb_show_arrow="false"
+        app:mlpb_arrow_height="10dp"
+        app:mlpb_arrow_width="10dp"
+        app:mlpb_inner_radius="15dp"
+        app:mlpb_background_color="#ffffff"
+        app:mlpb_enable_circle_background="true"
+        app:mlpb_progress_stoke_width="2dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+

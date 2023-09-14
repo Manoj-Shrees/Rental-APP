@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313e93"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/userpic"
+        android:src="@drawable/ic_avatar"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Some Details are Required to sign up to our service."
+        android:textSize="15dp"
+        android:fontFamily="@font/whitneymedium"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/messagetxt"
+        android:gravity="center"
+        android:layout_below="@+id/welcometxt"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/holoboxwhite"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerVertical="true"
+        android:imeOptions="actionNext"
+        android:inputType="textCapCharacters"
+        android:hint="Name"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:drawableLeft="@drawable/ic_user"
+        android:layout_below="@+id/messagetxt"
+        android:id="@+id/loginpagesignupuser_name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/holoboxwhite"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:hint="Email ID"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:drawableLeft="@drawable/ic_email"
+        android:layout_below="@+id/loginpagesignupuser_name"
+        android:id="@+id/loginpagesignupemailid"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/holoboxwhite"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:hint="Mobile No."
+        android:maxLength="10"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:drawableLeft="@drawable/ic_phone_no"
+        android:layout_below="@+id/loginpagesignupemailid"
+        android:id="@+id/loginpagesignupmobno"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/holoboxwhite"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:maxLength="16"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textColorHint="#ffffff"
+        android:drawableLeft="@drawable/ic_passicon"
+        android:layout_below="@+id/loginpagesignupmobno"
+        android:id="@+id/loginpagesignuppass"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/holoboxwhite"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:layout_gravity="center"
+        android:text="Submit"
+        android:textColor="#ffffff"
+        android:id="@+id/socialloginbtn"
+        />
+
+</LinearLayout>

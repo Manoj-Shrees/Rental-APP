@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a9a9a9"
+    >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mycard_product_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/Toolselectionlayout"
+        android:layout_below="@+id/productlisttoolbar"
+        android:layout_marginBottom="2dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/Toolselectionlayout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/produclisttsortbtn"
+            android:layout_alignRight="@+id/productselectorsep"
+            >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_sort"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/whitneymedium"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#000000"
+            android:textSize="15dp"
+            android:id="@+id/productselectorsep"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/produclisttfilterbtn"
+            android:layout_alignLeft="@+id/productselectorsep"
+            >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_filter"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/myorderdeletebtntxt"
+            android:id="@+id/myordercancleorder"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter"
+            android:id="@+id/myorderdeletebtntxt"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/whitneymedium"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="#303F9F"
+        android:id="@+id/productlisttoolbar"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:id="@+id/dresstype"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/fontawesome"
+                android:textSize="15dp"
+                android:textAllCaps="true"
+                android:textColor="#ffffff"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/productselectromenu_cart"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_carthollow"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                />
+
+            <Button
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/productselectorcartbadge"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/ic_badge"
+                android:textColor="#ffffff"
+                android:textSize="7dp"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="7dp"
+                android:id="@+id/productselectromenu_wishlist"
+                android:layout_toLeftOf="@+id/productselectorwishlistbadge"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_wishlisthollow"
+                android:layout_centerVertical="true"
+                />
+
+            <Button
+                android:id="@+id/productselectorwishlistbadge"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/productselectromenu_cart"
+                android:background="@drawable/ic_badge"
+                android:textColor="#ffffff"
+                android:textSize="7dp" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toLeftOf="@+id/productselectromenu_wishlist"
+                android:background="@drawable/ic_search"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/productselectrosearchbtn"
+                />
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

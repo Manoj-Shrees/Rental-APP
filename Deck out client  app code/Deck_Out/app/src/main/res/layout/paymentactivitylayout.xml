@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3b444b"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:id="@+id/deckoutlogolayout"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="-40dp"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="100dp"
+            android:layout_height="99dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/deckoutlauncher" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Deck Out"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/sneakout"
+        />
+
+    <View
+        android:layout_width="150dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:id="@+id/slippter"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="The Dress Rental App"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/whitneymedium"
+        />
+
+</LinearLayout>
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:id="@+id/paymentprogressBar"
+        android:layout_above="@+id/paymentactivitymessage"
+        app:mlpb_show_arrow="false"
+        app:mlpb_arrow_height="10dp"
+        app:mlpb_arrow_width="10dp"
+        app:mlpb_inner_radius="15dp"
+        android:layout_marginTop="40dp"
+        app:mlpb_background_color="#ffffff"
+        app:mlpb_enable_circle_background="true"
+        app:mlpb_progress_stoke_width="2dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:text="Fetching data"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/whitneymedium"
+        android:id="@+id/paymentactivitymessage"
+        android:layout_alignParentBottom="true"
+        />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_payment_successful"
+            android:id="@+id/sucessfullypaymenticon"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sucessfullypaymenticon"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Payment has been Successful"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:fontFamily="@font/sneakout"
+            android:id="@+id/paymentsucessmsgtxt"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Back to Home"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:background="@drawable/holoboxwhite"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/paymentsucessmsgtxt"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_payment_successful"
+            android:id="@+id/failedpaymenticon"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/failedpaymenticon"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Payment has been Failed"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:fontFamily="@font/sneakout"
+            android:id="@+id/failedmsgtxt"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Retry"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:background="@drawable/holoboxwhite"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/failedmsgtxt"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frgtmainlayout">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="#fff"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#c7080808"
+            android:id="@+id/mobno"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:maxLength="10"
+            android:enabled="false"
+            android:imeOptions="actionDone"
+            android:textColorHint="#fff"
+            android:textStyle="italic"
+            android:gravity="center"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            >
+            <cn.iwgang.countdownview.CountdownView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:isShowDay="false"
+                app:isShowHour="false"
+                app:isShowMinute="false"
+                app:isHideTimeBackground="true"
+                app:isShowSecond="true"
+                app:timeTextColor="#000000"
+                app:timeTextSize="22sp"
+                app:isTimeTextBold="true"
+                app:suffixGravity="bottom"
+                app:suffixTextColor="#000000"
+                app:suffixTextSize="12sp"
+                app:suffixSecond="s"
+                android:layout_marginTop="10dp"
+                android:id="@+id/seccounter"
+                />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/seccounter"
+                android:text="Resend"
+                android:background="#838080"
+                android:textColor="#fff"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/resendotpbtn"
+                android:enabled="false"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter a generated OTP code Recieved in above phone number and if not recieved or not your phone number close this and enter correct Phone number then sign up again or click on resend to Regenerate code."
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/otptext"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#c7080808"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:inputType="" android:maxLength="6"
+            android:imeOptions="actionDone"
+            android:textColorHint="#fff"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:hint="OTP CODE"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/optinput"
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/otpprogressbar"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="verify"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/frgtpassinputemail"
+            android:background="#14cef5"
+            android:textColor="#ffffffff"
+            android:id="@+id/otpverifybtn"
+            />
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="TODO" android:src="@drawable/ic_close"
+        android:id="@+id/otpdialogclosebtn"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

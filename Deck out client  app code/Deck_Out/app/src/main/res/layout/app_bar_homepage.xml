@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:fitsSystemWindows="true"
+        android:background="#303F9F"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/homepagetoolbar"
+            android:background="@color/transparent"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deck Out"
+                    android:layout_marginTop="7dp"
+                    android:fontFamily="@font/semibold"
+                    android:layout_centerVertical="true"
+                    android:textSize="15dp"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/homepagemenu_cart"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_carthollow"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    />
+
+                <Button
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/cartbadge"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ic_badge"
+                    android:textColor="#ffffff"
+                    android:textSize="7dp"
+                    />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="7dp"
+                    android:id="@+id/homepagemenu_wishlist"
+                    android:layout_toLeftOf="@+id/whislistbadge"
+                    android:contentDescription="TODO" android:src="@drawable/ic_wishlisthollow"
+                    android:layout_centerVertical="true"
+                    />
+
+                <Button
+                    android:id="@+id/whislistbadge"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/homepagemenu_cart"
+                    android:background="@drawable/ic_badge"
+                    android:textColor="#ffffff"
+                    android:textSize="7dp" />
+
+                <Button
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/homepagesearchbtn"
+                    android:layout_toLeftOf="@+id/homepagemenu_wishlist"
+                    android:background="@drawable/ic_search"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:id="@+id/collapsetoolbar"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/homepageshortcutlist"
+            android:fitsSystemWindows="true"
+            app:layout_collapseMode="parallax"
+            />
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout1"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                layout="@layout/mainpageimageviewpager"/>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
